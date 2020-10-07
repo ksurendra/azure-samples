@@ -1,0 +1,44 @@
+<html lang="en" data-framework="knockoutjs">
+  <head>
+    <meta charset="utf-8">
+    <title>Azure AD B2C - Sample</title>
+    <link rel="stylesheet" href="css/bootstrap-4.5.2.min.css">
+    <link rel="stylesheet" href="css/default.css" >
+  </head>
+  
+  <body class="form-signin">
+    <form action="/azure/ad/ropc/authenticate" method="post">
+      <div class="text-center mb-4">        
+        <h1 class="h3 mb-3 font-weight-normal">User Login</h1>
+        <p>Uses Azure Active Directory B2C's <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc" target="_blank">OAUth 2.0 ROPC(Resource Owner Password Credentials)</a></p>
+      </div>
+  
+      <div class="form-label-group">
+        <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+        <label for="username">Username</label>
+      </div>
+  
+      <div class="form-label-group">
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+        <label for="inputPassword">Password</label>
+      </div>
+
+      <div class="text-center mb-4">                
+        <p>Also will need these..</p>
+      </div>  
+
+      <div class="form-label-group">
+        <input type="text" id="clientid" name="clientid" class="form-control" placeholder="Client ID" required>
+        <label for="clientid">Application(Client) ID</label>
+      </div>
+      
+      <div class="form-label-group">
+        <input type="text" id="tenantid" name="tenantid" class="form-control" placeholder="Tenant ID" required>
+        <label for="tenantid">Tenant ID</label>
+      </div>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>     
+      <p class="mt-5 mb-3 text-muted text-center">Built with <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank">Bootstrap 4.5.2</a>, <a href="https://helidon.io/docs/latest/#/about/02_introduction" target="_blank">Helidon MP 2.0</a> on <a href="https://openjdk.java.net/projects/jdk/11/" target="_blank">OpenJDK 11</a></p> 
+    </form>
+  </body>
+</html>
